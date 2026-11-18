@@ -7,6 +7,14 @@ async function startServer() {
   try {
     await connectDB();
 
+    const User = require('./models/User');
+    const userCount = await User.countDocuments();
+    if (userCount === 0) {
+      console.log('Database empty on startup. Automatically seeding initial users, settings, and sample data...');
+      const seed = require('./config/seeder');
+      await seed(false);
+    }
+
     initializeCronScheduler();
 
     const server = app.listen(env.PORT, () => {

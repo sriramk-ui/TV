@@ -4,6 +4,9 @@ const env = require('./env');
 let memoryServerInstance = null;
 
 async function connectDB() {
+  if (mongoose.connection.readyState === 1) {
+    return;
+  }
   try {
     mongoose.set('strictQuery', false);
     
