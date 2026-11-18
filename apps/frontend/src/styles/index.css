@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F5F6F9;
+  --panel: #FFFFFF;
+  --ink: #181C26;
+  --muted: #808796;
+  --line: #EAECF1;
+  --blue: #243D83;
+  --deep: #111C3E;
+  --soft: #EFF2FB;
+  --green: #1B946D;
+  --red: #C24B53;
+  --amber: #BD7A1C;
+  --radius: 18px;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background-color: var(--bg);
+  font-family: 'Inter', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13.5px;
+  -webkit-font-smoothing: antialiased;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

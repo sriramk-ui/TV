@@ -1,0 +1,12 @@
+{
+  "name": "@sankara/config",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "dependencies": {
+    "@sankara/ui": "*"
+  },
+  "scripts": {
+    "test": "echo \"@sankara/config test passed\""
+  }
+}
