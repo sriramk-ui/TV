@@ -73,3 +73,4 @@ Created executive design tokens, Tailwind configuration presets, and atomic comp
 - Automated test suites passing 19 out of 19 tests with zero failures.
 - Both React applications (`apps/frontend` and `apps/admin`) compile and bundle successfully with Vite.
 - In-memory MongoDB runner verified for zero-dependency execution.
+- Added automatic startup seeder in `server.js` to ensure test accounts (`cmo@srisankaratv.com`, `productionhead@srisankaratv.com`, `ep1@srisankaratv.com`, `accounts@srisankaratv.com`, `karthik.camera@srisankaratv.com` with `Password@123`) are pre-populated upon server launch.
